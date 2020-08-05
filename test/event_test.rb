@@ -43,7 +43,7 @@ class EventTest < Minitest::Test
     assert_equal [food_truck1, food_truck2, food_truck3], event.food_trucks
   end
 
-  def test_it_can_return_food_trucks_names
+  def test_it_can_return_food_truck_names
     event = Event.new("South Pearl Street Farmers Market")
     food_truck1 = FoodTruck.new("Rocky Mountain Pies")
     food_truck2 = FoodTruck.new("Ba-Nom-a-Nom")
