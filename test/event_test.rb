@@ -158,4 +158,10 @@ class EventTest < Minitest::Test
     assert_equal ["Apple Pie (Slice)", "Banana Nice Cream", "Peach Pie (Slice)", "Peach-Raspberry Nice Cream"], event.sorted_item_list
   end
 
+  def test_it_can_return_date
+    event = Event.new("South Pearl Street Farmers Market")
+
+    assert_equal "24/02/2020", event.date
+  end
+
 end
