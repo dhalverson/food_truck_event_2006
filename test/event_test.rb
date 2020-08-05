@@ -3,6 +3,7 @@ require 'minitest/pride'
 require './lib/item'
 require './lib/food_truck'
 require './lib/event'
+require 'date'
 
 class EventTest < Minitest::Test
 
@@ -155,7 +156,6 @@ class EventTest < Minitest::Test
     event.add_food_truck(food_truck3)
 
     assert_equal ["Apple Pie (Slice)", "Banana Nice Cream", "Peach Pie (Slice)", "Peach-Raspberry Nice Cream"], event.sorted_item_list
-
   end
 
 end
