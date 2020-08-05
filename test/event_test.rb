@@ -165,5 +165,4 @@ class EventTest < Minitest::Test
     event.stubs(:date).returns("24/02/2020")
     assert_equal "24/02/2020", event.date
   end
-
 end
