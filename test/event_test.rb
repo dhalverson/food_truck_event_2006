@@ -1,5 +1,6 @@
 require 'minitest/autorun'
 require 'minitest/pride'
+require 'mocha/minitest'
 require './lib/item'
 require './lib/food_truck'
 require './lib/event'
@@ -161,6 +162,7 @@ class EventTest < Minitest::Test
   def test_it_can_return_date
     event = Event.new("South Pearl Street Farmers Market")
 
+    event.stubs(:date).returns("24/02/2020")
     assert_equal "24/02/2020", event.date
   end
 

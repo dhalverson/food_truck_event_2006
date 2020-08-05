@@ -5,6 +5,7 @@ class Event
   def initialize(name)
     @name = name
     @food_trucks = []
+    @date = Date.today
   end
 
   def add_food_truck(food_truck)
@@ -46,5 +47,9 @@ class Event
     total_inventory.keys.map do |item|
       item.name
     end.sort
+  end
+
+  def date
+    @date.strftime("%m/%d/%Y")
   end
 end
